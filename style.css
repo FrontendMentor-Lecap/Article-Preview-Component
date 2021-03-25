@@ -31,7 +31,7 @@ article {
   border-radius: 1em;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   max-width: 60rem;
-  min-height: 21rem;
+  min-height: 19rem;
 }
 
 .article__image {
@@ -39,6 +39,7 @@ article {
   overflow: hidden;
   display: flex;
   align-items: flex-start;
+  position: relative;
 }
 
 .article__image img {
@@ -160,6 +161,8 @@ article {
   }
 
   .article__image img {
+    object-fit: cover;
+    object-position: -1vw;
     height: 100%;
     border-radius: 1em 0 0 1em;
   }
